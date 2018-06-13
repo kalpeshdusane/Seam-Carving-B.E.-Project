@@ -8,11 +8,11 @@
 
 ## For execution
 
-1) you have a CUDA enabled GPU in your system.
-2) you have CUDA runtime environment (greater than v2.3).
-3) you have visual c++ runtime environment.
-4) double click on the exe
-5) run the project
+1) You have a CUDA enabled GPU in your system.
+2) You have CUDA runtime environment (greater than v2.3).
+3) You have visual c++ runtime environment.
+4) Double click on the exe.
+5) Run the project.
 
 
 
