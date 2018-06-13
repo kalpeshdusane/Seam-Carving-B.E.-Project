@@ -14,6 +14,10 @@
 4) Double click on the exe.
 5) Run the project.
 
+## Publication 
+
+- [ACCELERATED SEAM CARVING USING CUDA](https://ijret.org/volumes/2014v03/i10/IJRET20140310048.pdf)
+
 
 
 <!-- Markdown link & img dfn's -->
