@@ -2,7 +2,7 @@
 
 [![Build Status][travis-image]][travis-url]
 
-## *Title* - Implementation of seam carving for image retargetting using CUDA enabled GPU
+## *Project Title* - Implementation of seam carving for image retargetting using CUDA enabled GPU
 
 [**SeamCarving**](https://github.com/kalpeshdusane/Seam-Carving-B.E.-Project/blob/master/Project%20exe/SeamCarving.exe) executable is provided.
 
