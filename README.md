@@ -6,6 +6,36 @@
 
 [**SeamCarving**](https://github.com/kalpeshdusane/Seam-Carving-B.E.-Project/blob/master/Project%20exe/SeamCarving.exe) executable is provided.
 
+## Introduction
+
+### What is Seam Carving?
+
+From Wikipedia :
+
+>**Seam carving is an algorithm for image resizing**, developed by Shai Avidan, of Mitsubishi
+Electric Research Laboratories (MERL), and Ariel Shamir, of the Interdisciplinary Center and MERL. It
+functions by establishing a number of seams (paths of least importance) in an image and **automatically
+removes seams to reduce image size or inserts seams to extend it.** Seam carving also allows manually
+defining areas in which pixels may not be modified, and **features the ability to remove whole objects from
+photographs.** 
+>
+>*The purpose of the algorithm is to display images without distortion on various media (cell
+phones, PDAs) using document standards, like HTML, that already support dynamic changes in page
+layout and text, but not images.*
+
+### What is a seam?
+
+From Wikipedia :
+
+>Seams can be either vertical or horizontal. **A vertical seam is a path of connected pixels from top
+to bottom in an image with one pixel in each row.** A horizontal seam is similar with the exception of the
+connection being from left to right. The importance/energy function values a pixel by measuring its
+contrast with its neighbor pixels.
+
+![image](readmeImage/seam1.png)
+
+![image](readmeImage/seam2.png)
+
 ## For execution
 
 1) You have a CUDA enabled GPU in your system.
