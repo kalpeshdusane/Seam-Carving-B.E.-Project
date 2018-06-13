@@ -1,6 +1,6 @@
 # Seam Carving Parallel Execution
 
-**SeamCarving** executable is provided.
+[**SeamCarving**](https://github.com/kalpeshdusane/Seam-Carving-B.E.-Project/blob/master/Parallel/Project%20exe/SeamCarving.exe) executable is provided.
 
 ## For Execution
 
