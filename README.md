@@ -67,7 +67,7 @@ contrast with its neighbor pixels.
 1) Double click on the [**SeamCarving.exe**](https://github.com/kalpeshdusane/Seam-Carving-B.E.-Project/blob/master/Project%20exe/SeamCarving.exe).
 2) Run the project.
 
-## Publication 
+## Published Paper
 
 - [ACCELERATED SEAM CARVING USING CUDA](https://ijret.org/volumes/2014v03/i10/IJRET20140310048.pdf)
 
