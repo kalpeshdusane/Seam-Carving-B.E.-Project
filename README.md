@@ -2,9 +2,13 @@
 
 [![Build Status][travis-image]][travis-url]
 
-## *Project Title* - Implementation of [*Seam Carving*](https://en.wikipedia.org/wiki/Seam_carving) for image retargetting using [CUDA](https://en.wikipedia.org/wiki/CUDA) enabled [GPU](https://en.wikipedia.org/wiki/Graphics_processing_unit)
+## *Project Title* - Implementation of *Seam Carving* for image retargetting using CUDA enabled GPU
 
-[**SeamCarving**](https://github.com/kalpeshdusane/Seam-Carving-B.E.-Project/blob/master/Project%20exe/SeamCarving.exe) executable is provided.
+## Problem Definition
+
+To implement **content-aware [Seam Carving Algorithm](https://en.wikipedia.org/wiki/Seam_carving)** of image processing (which is used by Adobe Photoshop) using a **sequential** and a **parallel** approach. The sequential implementation will be done on a CPU (Central processing units) and the parallel implementation will be done on a [CUDA (Compute unified device architecture)](https://en.wikipedia.org/wiki/CUDA) powered NVidia [GPU](https://en.wikipedia.org/wiki/Graphics_processing_unit). 
+
+*The primary purpose of this demonstration is to show the difference between the computational speeds of a CPU and a GPU.* 
 
 ## Introduction
 
@@ -58,7 +62,7 @@ contrast with its neighbor pixels.
 | 2. | environment | .NET 3.5 and up, visual c++ runtime environment. |
 | 3. | CUDA runtime environment | Greater than v2.3 |
 
-## For execution
+## Execution Instructions
 
 1) Double click on the [**SeamCarving.exe**](https://github.com/kalpeshdusane/Seam-Carving-B.E.-Project/blob/master/Project%20exe/SeamCarving.exe).
 2) Run the project.
