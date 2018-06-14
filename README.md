@@ -67,6 +67,41 @@ contrast with its neighbor pixels.
 1) Double click on the [**SeamCarving.exe**](https://github.com/kalpeshdusane/Seam-Carving-B.E.-Project/blob/master/Project%20exe/SeamCarving.exe).
 2) Run the project.
 
+![image](readmeImage/GUI1.png)
+
+This is the main interface of our application.
+- The first textbox is to select the image path either by browsing or entering manually. 
+- The second text box is for accepting the number of seams that are to be carved manually in the form of an integer number.
+
+![image](readmeImage/GUI2.png)
+
+Then User can choose one of these three options :
+- Curve Sequentially
+- Draw Seams Parallely
+- Curve Parallely
+
+![image](readmeImage/GUI3.png)
+
+After pressing any key program shows the output of the algorithm.
+
+![image](readmeImage/GUI4.png)
+
+## Results
+
+Here we are using Coldplay's [Ghost Stories](https://en.wikipedia.org/wiki/Ghost_Stories_(Coldplay_album)) album cover image to show the results.
+
+### Input image (1600x900)
+
+![image](readmeImage/result1.png)
+
+### 50 Seams Highlighted
+
+![image](readmeImage/result2.png)
+
+### Output Image after 1000 Seams Removed
+
+![image](readmeImage/result3.png)
+
 ## Published Paper
 
 - [ACCELERATED SEAM CARVING USING CUDA](https://ijret.org/volumes/2014v03/i10/IJRET20140310048.pdf)
