@@ -36,6 +36,20 @@ contrast with its neighbor pixels.
 
 ![image](readmeImage/seam2.png)
 
+## Installation
+
+## Hardware Requirements:
+
+| | Component | Requirement |
+|--|--|--|
+|1.| Processor |  Minimum Requirement: Intel Pentium 4 or above/AMD Anthon processor range or above.|
+| | | Recommended Requirement: Intel i3 2nd Generation or above/AMD Phoenix or above. |
+|2.|Memory | Minimum Requirements : 100MB or above. |
+| | | Recommended Requirement:250MB or above. |
+|3.|Hard disk space | Minimum Requirement : 120MB or above. |
+| | | Recommended Requirement: 200MB or above. |
+|4.|Others| CUDA enabled GPU's manufactured by NVIDIA present in PC's OR Laptops |
+
 ## For execution
 
 1) You have a CUDA enabled GPU in your system.
