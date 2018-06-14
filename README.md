@@ -42,21 +42,26 @@ contrast with its neighbor pixels.
 
 | | Component | Requirement |
 |--|--|--|
-|1.| Processor |  Minimum Requirement: Intel Pentium 4 or above/AMD Anthon processor range or above.|
-| | | Recommended Requirement: Intel i3 2nd Generation or above/AMD Phoenix or above. |
-|2.|Memory | Minimum Requirements : 100MB or above. |
-| | | Recommended Requirement:250MB or above. |
-|3.|Hard disk space | Minimum Requirement : 120MB or above. |
-| | | Recommended Requirement: 200MB or above. |
+|1.| Processor |  **Minimum Requirement:** Intel Pentium 4 or above/AMD Anthon processor range or above.|
+| | | **Recommended Requirement:** Intel i3 2nd Generation or above/AMD Phoenix or above. |
+|2.|Memory | **Minimum Requirements:** 100MB or above. |
+| | | **Recommended Requirement:** 250MB or above. |
+|3.|Hard disk space | **Minimum Requirement:** 120MB or above. |
+| | | **Recommended Requirement:** 200MB or above. |
 |4.|Others| CUDA enabled GPU's manufactured by NVIDIA present in PC's OR Laptops |
+
+### Software Requirements:
+
+| | Software | Requirement |
+| -- | -- | -- |
+| 1. | Operating System | Windows (XP and above) |
+| 2. | environment | .NET 3.5 and up, visual c++ runtime environment. |
+| 3. | CUDA runtime environment | Greater than v2.3 |
 
 ## For execution
 
-1) You have a CUDA enabled GPU in your system.
-2) You have CUDA runtime environment (greater than v2.3).
-3) You have visual c++ runtime environment.
-4) Double click on the exe.
-5) Run the project.
+1) Double click on the [**SeamCarving.exe**](https://github.com/kalpeshdusane/Seam-Carving-B.E.-Project/blob/master/Project%20exe/SeamCarving.exe).
+2) Run the project.
 
 ## Publication 
 
