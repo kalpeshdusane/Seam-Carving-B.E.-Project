@@ -102,6 +102,16 @@ Here we are using Coldplay's [Ghost Stories](https://en.wikipedia.org/wiki/Ghost
 
 ![image](readmeImage/result3.png)
 
+The following table represent the execution timings in seconds for the above image of size 1600x900 pixels:
+
+| No of seams | Sequential(CPU) | Parallel(GPU) |
+|--|--|--|
+| 50 | 43.596 | 7.091 |
+| 100 | 72.394 | 11.603 |
+| 200 | 161.998 | 20.652 |
+| 500 | 345.105 | 44.819 |
+| 1000 | 548.305 | 76.117 |
+
 ## Published Paper
 
 - [ACCELERATED SEAM CARVING USING CUDA](https://ijret.org/volumes/2014v03/i10/IJRET20140310048.pdf)
