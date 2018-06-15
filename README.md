@@ -174,6 +174,16 @@ The line graph showing the difference in speeds of execution is as follows:
 
 ![image](readmeImage/graph.png)
 
+## Details
+
+Seam Carving Algorithm can be used to perform following tasks:
+
+1. Seam Insertion (Increase the image size)
+2. Seam Removal (Decrease the image size)
+3. Object Removal (Removing particular object without any distortion)
+
+Here we only perform seam removal operation. 
+
 ## Published Paper
 
 - [ACCELERATED SEAM CARVING USING CUDA](https://ijret.org/volumes/2014v03/i10/IJRET20140310048.pdf)
