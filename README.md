@@ -112,6 +112,10 @@ The following table represent the execution timings in seconds for the above ima
 | 500 | 345.105 | 44.819 |
 | 1000 | 548.305 | 76.117 |
 
+The line graph showing the difference in speeds of execution is as follows:
+
+![image](readmeImage/graph.png)
+
 ## Published Paper
 
 - [ACCELERATED SEAM CARVING USING CUDA](https://ijret.org/volumes/2014v03/i10/IJRET20140310048.pdf)
