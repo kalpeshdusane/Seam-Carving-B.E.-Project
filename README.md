@@ -174,7 +174,7 @@ The line graph showing the difference in speeds of execution is as follows:
 
 ![image](readmeImage/graph.png)
 
-## Details
+## Seam Carving Details
 
 Seam Carving Algorithm can be used to perform following tasks:
 
