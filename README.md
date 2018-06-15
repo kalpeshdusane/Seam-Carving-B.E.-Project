@@ -40,6 +40,64 @@ contrast with its neighbor pixels.
 
 ![image](readmeImage/seam2.png)
 
+### Why Seam Carving?
+
+Effective resizing of images should not only use geometric constraints, but consider the image content as well. 
+Conventional image resizing consists of **cropping** or evenly **down sampling** that *lead to loss of important features or distortion.* 
+Whereas on the other hand seam carving method enables us to remove pixel from uninteresting parts of the image while preserving important content.
+
+![image](readmeImage/why1.png)
+
+![image](readmeImage/why2.png)
+
+As seen in above Figure We can clearly notice that Seam carving method preserves the interesting features of the image (here castle and person) when resized the image. 
+On the contrary Scaling introduces geometric distortion And Cropping resulted in loss of important features of the
+image (person on the left).
+
+>Seam carving can be used for distortion free image expansion by inserting least energy seams in
+the image. This can also be extended to object removal and object protection in an image.
+
+### What is CUDA?
+
+CUDA (Compute Unified Device Architecture) is an open parallel architecture, introduced in 2007, developed by Nvidia.
+It is a computational drive, which is used in graphics processors, and is accessible to software developers through the standard programming languages. 
+It mainly uses C as an extensing language for CUDA, along with other languages such as Perl, Python, Java, Fortran and Matlab environment. 
+
+*CUDA gives developers access to a limited set of command and GPU resources.* 
+CUDA exploits the potential of the powerful graphics processing units in modern computers. 
+**The main difference in the architecture of CPU and GPU is in the proportion of transistors that they designed with, as well as the number of tasks that they can perform in parallel.**
+
+![image](readmeImage/GPUArch.png)
+
+The orange color is highlighted memory part, to control yellow, and green represents arithmetical logical part of the process unit.
+
+### How CUDA works?
+
+The operation is divided into four phases:
+
+1. Transfer of data from main memory to GPU memory
+2. CPU commands GPU to perform the task
+3. Graphics processing unit processes the data
+4. Transfer of data from GPU memory to main memory
+
+![image](readmeImage/CUDA.png)
+
+### CUDA programming model
+
+Software code written for CUDA system is divided into two units, the parallel and the serial code.
+- The serial code is carried out on the CPU and contains mainly commands to transfer data to the GPU and vice versa. 
+- Otherwise it may be a serial code which includes a part of the algorithm, which is implemented on the CPU. 
+
+In CUDA programming model, **CPU is known as the host and GPU is known as the device.** 
+A piece of code that runs on the GPU is known as thread. A collection of threads, known as a block runs on a single CUDA processor, where all threads within the block run in parallel. 
+The image to be processed is divided into such blocks. A collection of blocks is known as a grid. 
+A C-like function that runs on the GPU is known as kernel. 
+The kernel call includes the specification of gridsize, blocksize and other specifications that are required. 
+
+Following figure shows the block diagram of CUDA programming model.
+
+![image](readmeImage/CUDAarch.png)
+
 ## Installation
 
 ## Hardware Requirements:
