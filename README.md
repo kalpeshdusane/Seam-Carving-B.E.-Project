@@ -178,6 +178,10 @@ The line graph showing the difference in speeds of execution is as follows:
 
 - [ACCELERATED SEAM CARVING USING CUDA](https://ijret.org/volumes/2014v03/i10/IJRET20140310048.pdf)
 
+## Project Poster
+
+![image](readmeImage/poster.jpg)
+
 ## Contributers
 
 -	Prathmesh
