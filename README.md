@@ -184,6 +184,12 @@ Seam Carving Algorithm can be used to perform following tasks:
 
 Here we only perform seam removal operation. 
 
+### 
+
+## Project WorkFlow
+
+![image](readmeImage/flowchart.png)
+
 ## Published Paper
 
 - [ACCELERATED SEAM CARVING USING CUDA](https://ijret.org/volumes/2014v03/i10/IJRET20140310048.pdf)
