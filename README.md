@@ -237,6 +237,33 @@ This can be seen as inverse of seam removal operation; instead of removing minim
 
 ![image](readmeImage/flowchart.png)
 
+## Optimized GPU Implementation
+
+### 1. Compute Energy Gradient Table on Kernel
+
+A single thread is responsible for computing the energy of each specific pixel. The kernel function is called with 32 x 32 thread blocks. Enough blocks will be created to provide a thread for each pixel in the image.
+
+### 2. Compute Minimum Cost Table on Kernel 
+
+The minimum cost table is a representation of the cost of taking potential paths through an image. 
+The minimum cost of each pixel is equal to its energy added to the minimum of the costs of the three neighboring above pixels. 
+This is naturally an operation that occurs row by row.
+*In the call to this kernel function, threads will be created for **each column.**
+The minimum cost table will be created row by row, with each thread computing the minimum cost for one pixel in the row.*
+Since each row of the minimum cost table depends on the above row, the threads will be synchronized after each row. The simplicity of this synchronization is a significant advantage of using the GPU.
+
+### 3. Performing a Reduction operation on Kernel
+
+After computing the minimum cost table, the minimum value in the bottom row of the table must be located. 
+Starting at this pixel, backtracking will be used to discover the minimum seam in the image.
+This is the seam that will be removed.
+*Instead of searching for the minimum linearly, a minimum reduction will be performed on the GPU to identify the bottom of the minimum seam.
+The bottom row is stored in shared memory on GPU to ensure that the operations necessary for the reduction occur without costly fetches to DRAM. 
+It is important to note that this reduction must track both the minimum value and the index of that minimum value.
+Once the minimum index has been determined, it is copied back to the host for use in backtracking the minimum seam.
+
+### 4. Use of Shared Memory
+
 ## Published Paper
 
 - [ACCELERATED SEAM CARVING USING CUDA](https://ijret.org/volumes/2014v03/i10/IJRET20140310048.pdf)
