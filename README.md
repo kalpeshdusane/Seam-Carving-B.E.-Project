@@ -255,7 +255,7 @@ This is naturally an operation that occurs row by row.
 The minimum cost table will be created row by row, with each thread computing the minimum cost for one pixel in the row.*
 
 Since each row of the minimum cost table depends on the above row, the threads will be synchronized after each row. 
-The simplicity of this synchronization is a significant advantage of using the GPU.
+The simplicity of this synchronization is a significant advantage of using the **GPU**.
 
 ### 3. Performing a Reduction operation on Kernel
 
@@ -263,8 +263,8 @@ After computing the minimum cost table, the minimum value in the bottom row of t
 Starting at this pixel, backtracking will be used to discover the minimum seam in the image.
 This is the seam that will be removed.
 
-*Instead of searching for the minimum linearly, a minimum reduction will be performed on the GPU to identify the bottom of the minimum seam.*
-The bottom row is stored in shared memory on GPU to ensure that the operations necessary for the reduction occur without costly fetches to DRAM. 
+*Instead of searching for the minimum linearly, a minimum reduction will be performed on the **GPU** to identify the bottom of the minimum seam.*
+The bottom row is stored in shared memory on **GPU** to ensure that the operations necessary for the reduction occur without costly fetches to **DRAM**. 
 *It is important to note that this reduction must track both the minimum value and the index of that minimum value.
 Once the minimum index has been determined, it is copied back to the host for use in backtracking the minimum seam.*
 
