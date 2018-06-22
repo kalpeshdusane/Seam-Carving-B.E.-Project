@@ -178,7 +178,7 @@ The line graph showing the difference in speeds of execution is as follows:
 
 ### Failed Test Cases
 
-1. If there are to many important objects in the image then this algorithm will remove the seam passing through important object.
+1. If there are to many important objects in the image, then this algorithm will remove the seam passing through important object.
 
 ![image](readmeImage/fail.png)
 
