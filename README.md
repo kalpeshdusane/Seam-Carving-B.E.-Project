@@ -186,7 +186,20 @@ Seam Carving Algorithm can be used to perform following tasks:
 
 Here we only perform seam removal operation. 
 
-### 
+### Seam Removal Algorithm
+
+#### 1. Calculate Energy Map / Construction of Gradient Table
+
+#### 2. Computing Minimum Cost Table (Cumulative Intensity Distribution Matrix) 
+
+#### 3. Find Minimum Seam (from top to bottom edge)
+
+#### 4. Remove Minimum Seam (from top to bottom edge)
+
+#### 5. Repeat step 1 - 4 until required number of seams are removed.
+
+>**Above method is only for removing vertical seam but if you have to reduce height of the image(i.e. remove horizontal seam) just rotate the image 90 degrees counter-clockwise and repeat above steps.**
+
 
 ## Project WorkFlow
 
