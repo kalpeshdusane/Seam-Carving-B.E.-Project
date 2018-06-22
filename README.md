@@ -190,16 +190,48 @@ Here we only perform seam removal operation.
 
 #### 1. Calculate Energy Map / Construction of Gradient Table
 
+>Energy is calculated by sum the absolute value of the gradient in both x direction and y direction for all three channel (B, G, R). Energy map is a 2D image with the same dimension as input image.
+
 #### 2. Computing Minimum Cost Table (Cumulative Intensity Distribution Matrix) 
+
+>This step is implemented with dynamic programming.
+>The value of a pixel in the accumuluated cost matrix is equal to its corresponding pixel value in the energy map added to the minimum of its three top neighbors (top-left, top-center, and top-right) from the accumulated cost matrix. 
+
+![image](readmeImage/algo1.png)
+
+![image](readmeImage/algo2.png)
 
 #### 3. Find Minimum Seam (from top to bottom edge)
 
+>Backtracking from the bottom to the top edge of the accumulated cost matrix to find the minimum seam. 
+
+![image](readmeImage/algo3.png)
+
 #### 4. Remove Minimum Seam (from top to bottom edge)
+
+>All the pixels in each row after the pixel to be removed are shifted over one column to the left if it has index greater than the minimum seam.
 
 #### 5. Repeat step 1 - 4 until required number of seams are removed.
 
 >**Above method is only for removing vertical seam but if you have to reduce height of the image(i.e. remove horizontal seam) just rotate the image 90 degrees counter-clockwise and repeat above steps.**
 
+### Seam Insertion 
+
+This can be seen as inverse of seam removal operation; instead of removing minimum seam we just have to replicate the seam.
+>First perform seam removal for n seams on a duplicated input image and record all the coordinates in the same order when removing. Then, insert new seams to original input image in the same order at the recorded coordinates location. 
+>The inserted argificial pixel values are derived from an average of left and right neighbors.
+
+### Object Removal
+
+#### 1. Remove Object by Seam Removal operation
+
+>i. When generating energy map, the region protected by mask are weighted with a very high negative value. *This guarantees that the minimum seam will be routed through the masked region.* 
+>
+>ii. Seam removal is performed repeatly until masked region has been completely removed as stated above with one more step; the same minimum seam also has to be removed from the mask in order to get correct energy map for the next step.
+
+#### 2. Seam Insertion Operation
+
+>To get to original width/dimension we have to do seam insertion operation.
 
 ## Project WorkFlow
 
