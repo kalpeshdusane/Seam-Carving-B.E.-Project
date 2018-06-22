@@ -190,7 +190,7 @@ Here we only perform seam removal operation.
 
 #### 1. Calculate Energy Map / Construction of Gradient Table
 
->Energy is calculated by sum the absolute value of the gradient in both x direction and y direction for all three channel (B, G, R). Energy map is a 2D image with the same dimension as input image.
+>For each color channel, the energy is calculated by adding the absolute value of the gradient in the x direction to the absolute value of the gradient in the y direction. Energy map is a 2D image with the same dimension as input image.
 
 #### 2. Computing Minimum Cost Table (Cumulative Intensity Distribution Matrix) 
 
