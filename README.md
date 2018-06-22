@@ -27,6 +27,8 @@ photographs.**
 phones, PDAs) using document standards, like HTML, that already support dynamic changes in page
 layout and text, but not images.*
 
+For detail explanation check this [video](https://youtu.be/6NcIJXTlugc).
+
 ### What is a seam?
 
 From Wikipedia :
