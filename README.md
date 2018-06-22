@@ -176,6 +176,14 @@ The line graph showing the difference in speeds of execution is as follows:
 
 ![image](readmeImage/graph.png)
 
+### Failed Test Cases
+
+1. If there are to many important objects in the image then this algorithm will remove the seam passing through important object.
+
+![image](readmeImage/fail.png)
+
+2. If number of seams for removing are equal or greater than image width then output will be empty image.
+
 ## Seam Carving Details
 
 Seam Carving Algorithm can be used to perform following tasks:
