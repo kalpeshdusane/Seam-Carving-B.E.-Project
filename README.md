@@ -282,6 +282,10 @@ Once the minimum index has been determined, it is copied back to the host for us
 
 - [ACCELERATED SEAM CARVING USING CUDA](https://ijret.org/volumes/2014v03/i10/IJRET20140310048.pdf)
 
+## Project Report
+
+[Final Year Project Report](BE_Project_Report.pdf)
+
 ## Project Poster
 
 ![image](readmeImage/poster.jpg)
