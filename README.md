@@ -176,6 +176,8 @@ The line graph showing the difference in speeds of execution is as follows:
 
 ![image](readmeImage/graph.png)
 
+Achieved **~7.5x** acceleration in the GPU execution time compared to CPU due to the high degree of parallelism achievable by the CUDA based architecture
+
 ### Failed Test Cases
 
 1. If there are to many important objects in the image, then this algorithm will remove the seam passing through important object.
