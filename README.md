@@ -176,7 +176,7 @@ The line graph showing the difference in speeds of execution is as follows:
 
 ![image](readmeImage/graph.png)
 
-Achieved **~7.5x** acceleration in the GPU execution time compared to CPU due to the high degree of parallelism achievable by the CUDA based architecture
+GPU execution showed an **~7.5x** acceleration in the execution time compared to CPU due to the high degree of parallelism achievable by the CUDA based architecture.
 
 ### Failed Test Cases
 
