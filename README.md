@@ -2,7 +2,6 @@
 
 ## *Project Title* - Implementation of *Seam Carving* for image retargeting using CUDA enabled GPU
 
-[![Build Status][travis-image]][travis-url]
 
 ## Problem Definition
 
